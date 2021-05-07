@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: "Krona One", sans-serif;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 4rem;
+}
+
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.calcular-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+.calcular {
+  background-color: gray; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}
+.calcular:hover {
+  color: rgb(92, 88, 88);
+  background-color: rgba(240, 255, 255, 0.884);
+  border-radius: 25px;
+}
+.count-down {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 3rem;
+  padding: 3rem;
+}
+
+img {
+  height: 50vh;
+  padding-top: 5rem;
+}
+
+.form-container {
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  background-color: burlywood;
+  min-width: 35vw;
+  min-height: 15vh;
+  border-radius: 25px;
+  padding-top: 4rem;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.container-input {
+  padding-top: 6rem;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(252, 250, 250); /* Green */
+  border: none;
+  color: rgb(97, 68, 68);
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.5s ease;
+}

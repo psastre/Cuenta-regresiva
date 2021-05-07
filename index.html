@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="coming-soon">
+        <div>
+            <h2>Cuanta regresiva</h2>
+            <div class="calcular-container">
+                <button class="calcular" onclick="abrePanel()">Calcular</button>
+            </div>
+            <div class="count-down">
+                <div class="container-day">
+                    <h3 class="dia">0</h3>
+                    <h3>Dias</h3>
+                </div>
+                <div class="container-hour">
+                    <h3 class="hora">0</h3>
+                    <h3>Horas</h3>
+                </div>
+                <div class="container-minutos">
+                    <h3 class="minutos">0</h3>
+                    <h3>Minutos</h3>
+                </div>
+                <div class="container-segundos">
+                <h3 class="segundos">0</h3>
+                <h3>Segundos</h3>
+            </div>
+            </div>    
+        </div>
+        <img src="foto.svg" alt="">
+        
+        <div class="form-container">
+            <div class="count-down">
+            
+                <div class="container-ano">
+                    <h3>Ano</h3>
+                    <input type="text" size="5" id="ano">
+                    
+                </div>
+                <div class="container-hour">
+                    <h3>Mes</h3>
+                    <select  onchange="show_month()" id="mes">
+                        <option value=''>--Select Month--</option>
+                        <option selected >Janaury</option>
+                        <option value='2'>February</option>
+                        <option value='3'>March</option>
+                        <option value='4'>April</option>
+                        <option value='5'>May</option>
+                        <option value='6'>June</option>
+                        <option value='7'>July</option>
+                        <option value='8'>August</option>
+                        <option value='9'>September</option>
+                        <option value='10'>October</option>
+                        <option value='11'>November</option>
+                        <option value='12'>December</option>
+                        </select> 
+                        </div>
+                    
+                
+                <div class="container-minutos">
+                    <h3>Dia</h3>
+                    <input type="number" size="2" id="dia" min="1" max="31">
+                    
+                </div>
+                <button class="sub" onclick="Final()">Calcular</button>
+
+            </div>
+        </div>
+            </div>
+            
+
+    <script src="app.js"></script>
+</body>
+</html>
